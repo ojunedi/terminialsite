@@ -1,0 +1,12 @@
+# SSH keys — never commit these (host identity + dev key)
+.ssh/
+
+# Compiled binary
+/sshsite
+
+# Logs
+*.log
+
+# Local tooling / OS cruft
+.DS_Store
+.claude/

@@ -1,0 +1,10 @@
+# Keep the build context small and the dev host key out of the image.
+sshsite
+server.log
+*.log
+.git
+.DS_Store
+assets/headshot.jpg
+.ssh/id_ed25519
+.ssh/id_ed25519.pub
+.claude
