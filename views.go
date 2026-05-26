@@ -28,7 +28,7 @@ var (
 	ruleStyle     = lipgloss.NewStyle().Foreground(colDim)
 	categoryStyle = lipgloss.NewStyle().Foreground(colDim)
 	itemStyle     = lipgloss.NewStyle().Foreground(colText)
-	itemSelected  = lipgloss.NewStyle().Foreground(colAccent).Bold(true)
+	itemSelected  = lipgloss.NewStyle().Foreground(lipgloss.Color("#5AA9FF")).Bold(true)
 	starStyle     = lipgloss.NewStyle().Foreground(colStar)
 )
 
@@ -176,8 +176,8 @@ func (m model) viewFooter() string {
 // shimmerBanner renders the figlet name with a bright highlight band that
 // sweeps left-to-right across the letters, advanced by the frame counter.
 func shimmerBanner(frame int) string {
-	base, _ := colorful.Hex("#8A6D1F")    // deep gold
-	highlight, _ := colorful.Hex("#FFF1B8") // pale gold
+	base, _ := colorful.Hex("#1F4E8A")    // deep blue
+	highlight, _ := colorful.Hex("#B8E1FF") // pale blue
 
 	lines := strings.Split(nameBanner, "\n")
 	width := 0
